@@ -13,8 +13,6 @@
 		3B64B98923756FC2004E17DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B98723756FC2004E17DB /* Main.storyboard */; };
 		3B64B98B23756FC4004E17DB /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B98A23756FC4004E17DB /* AppIcons.xcassets */; };
 		3B64B98E23756FC4004E17DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B98C23756FC4004E17DB /* LaunchScreen.storyboard */; };
-		3B969D9E2391E20F005980BD /* AssetCatalogAware.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D9D2391E20F005980BD /* AssetCatalogAware.framework */; };
-		3B969D9F2391E20F005980BD /* AssetCatalogAware.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D9D2391E20F005980BD /* AssetCatalogAware.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B969DA02391E20F005980BD /* Assets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D9B2391E204005980BD /* Assets.framework */; };
 		3B969DA12391E20F005980BD /* Assets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D9B2391E204005980BD /* Assets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -36,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3B969D9F2391E20F005980BD /* AssetCatalogAware.framework in Embed Frameworks */,
 				3B969DA12391E20F005980BD /* Assets.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -54,7 +51,6 @@
 		3B64B98D23756FC4004E17DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B64B98F23756FC4004E17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B969D952391E204005980BD /* Assets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Assets.xcodeproj; path = ../../../Assets.xcodeproj; sourceTree = "<group>"; };
-		3B969D9D2391E20F005980BD /* AssetCatalogAware.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AssetCatalogAware.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B969D9E2391E20F005980BD /* AssetCatalogAware.framework in Frameworks */,
 				3B969DA02391E20F005980BD /* Assets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +70,6 @@
 			children = (
 				3B64B98023756FC2004E17DB /* Example_UIKit */,
 				3B64B97F23756FC2004E17DB /* Products */,
-				3B969D9C2391E20F005980BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,14 +104,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B969D9C2391E20F005980BD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3B969D9D2391E20F005980BD /* AssetCatalogAware.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +121,8 @@
 			dependencies = (
 			);
 			name = Example_UIKit;
+			packageProductDependencies = (
+			);
 			productName = Example_UIKit;
 			productReference = 3B64B97E23756FC2004E17DB /* Example_UIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +151,8 @@
 				Base,
 			);
 			mainGroup = 3B64B97523756FC2004E17DB;
+			packageReferences = (
+			);
 			productRefGroup = 3B64B97F23756FC2004E17DB /* Products */;
 			projectDirPath = "";
 			projectReferences = (

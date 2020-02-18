@@ -13,8 +13,6 @@
 		3B64B9F723757B9D004E17DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B9F623757B9D004E17DB /* ContentView.swift */; };
 		3B64B9FC23757B9D004E17DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B9FB23757B9D004E17DB /* Preview Assets.xcassets */; };
 		3B64B9FF23757B9D004E17DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B9FD23757B9D004E17DB /* LaunchScreen.storyboard */; };
-		3B969D8F2391E0D0005980BD /* AssetCatalogAware.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D8E2391E0D0005980BD /* AssetCatalogAware.framework */; };
-		3B969D902391E0D0005980BD /* AssetCatalogAware.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D8E2391E0D0005980BD /* AssetCatalogAware.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B969D912391E0D0005980BD /* Assets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D8C2391E0C1005980BD /* Assets.framework */; };
 		3B969D922391E0D0005980BD /* Assets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B969D8C2391E0C1005980BD /* Assets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -36,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3B969D902391E0D0005980BD /* AssetCatalogAware.framework in Embed Frameworks */,
 				3B969D922391E0D0005980BD /* Assets.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -54,7 +51,6 @@
 		3B64B9FE23757B9D004E17DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B64BA0023757B9D004E17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B969D862391E0C0005980BD /* Assets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Assets.xcodeproj; path = ../../../Assets.xcodeproj; sourceTree = "<group>"; };
-		3B969D8E2391E0D0005980BD /* AssetCatalogAware.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AssetCatalogAware.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B969D8F2391E0D0005980BD /* AssetCatalogAware.framework in Frameworks */,
 				3B969D912391E0D0005980BD /* Assets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +70,6 @@
 			children = (
 				3B64B9F123757B9D004E17DB /* Example_SwiftUI */,
 				3B64B9F023757B9D004E17DB /* Products */,
-				3B969D8D2391E0D0005980BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,14 +112,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B969D8D2391E0D0005980BD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3B969D8E2391E0D0005980BD /* AssetCatalogAware.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +129,8 @@
 			dependencies = (
 			);
 			name = Example_SwiftUI;
+			packageProductDependencies = (
+			);
 			productName = Example_SwiftUI;
 			productReference = 3B64B9EF23757B9D004E17DB /* Example_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +159,8 @@
 				Base,
 			);
 			mainGroup = 3B64B9E623757B9D004E17DB;
+			packageReferences = (
+			);
 			productRefGroup = 3B64B9F023757B9D004E17DB /* Products */;
 			projectDirPath = "";
 			projectReferences = (

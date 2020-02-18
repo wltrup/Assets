@@ -12,6 +12,9 @@ struct ContentView: View {
         .foregroundColor(Assets.color(.foreground))
         .padding(25)
         .background(Assets.color(.backgroundExampleView))
+        .cornerRadius(15)
+        .padding(80)
+        .background(Assets.color(.backgroundMainView))
     }
 }
 
