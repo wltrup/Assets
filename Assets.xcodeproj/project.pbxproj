@@ -33,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B063C6623FE071C0021E6D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3B063C6923FE0D380021E6D3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3B572838238878C7005386FB /* SystemImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SystemImages.xcassets; sourceTree = "<group>"; };
 		3B57283B23887A39005386FB /* SwiftUIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFonts.swift; sourceTree = "<group>"; };
 		3B73D77B2372D66800A3FAFC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		3BF15879236BFDEC00E213C3 = {
 			isa = PBXGroup;
 			children = (
+				3B063C6623FE071C0021E6D3 /* README.md */,
+				3B063C6923FE0D380021E6D3 /* LICENSE */,
 				3BF15885236BFDEC00E213C3 /* Assets */,
 				3BF15884236BFDEC00E213C3 /* Products */,
 			);
