@@ -5,7 +5,7 @@
 **Assets** is an iOS framework to manage a variety of assets. Its main advantages are:
 
 - **Assets** supports both UIKit and SwiftUI
-- *modularity*: all your application assets are organised in a single module
+- *modularity*: your application assets are organised in a single module, separate from the rest of your application
 - *type safety*: assets are accessed via enumeration values (which *you* define), rather than string literals
 - *uniform API*: **Assets** manages Strings, SwiftUI Fonts, System Images, non-system Images, and Colors, using a uniform pattern, like so:
 ```swift
