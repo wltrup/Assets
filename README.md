@@ -76,4 +76,4 @@ Wagner Truppel, trupwl@gmail.com
 
 ## License
 
-**Assets** is available under the MIT license. See the [LICENSE](https://github.com/wltrup/Assets/LICENSE) file for more info.
+**Assets** is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
