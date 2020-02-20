@@ -9,8 +9,8 @@
 - *type safety*: assets are accessed via enumeration values (which *you* define), rather than string literals
 - *uniform API*: **Assets** manages Strings, SwiftUI Fonts, System Images, non-system Images, and Colors, using a uniform pattern, like so:
 ```swift
-        Assets.color(.backgroundMainView)
-        Assets.systemImage(.doneButton)
+Assets.color(.backgroundMainView)
+Assets.systemImage(.doneButton)
 ```
 
 It achieves its goals by relying on another library of mine, [AssetCatalogAware](https://github.com/wltrup/AssetCatalogAware), which is responsible for defining the various protocols and functions required to manage assets. This separation of concerns is what allows **Assets** to be customisable to your heart's content.
@@ -19,47 +19,47 @@ Example projects for both UIKit and SwiftUI are provided. Here are the relevant 
 
 - under SwiftUI:
 ```swift
-        import Assets
+import Assets
 
-        struct ContentView: View {
-            var body: some View {
-                Button(action: {}) {
-                    Assets.systemImage(.doneButton)
-                    Text(Assets.string(.exampleText))
-                        .font(Assets.font(.someLabelFont))
-                }
-                .font(Assets.font(.someButtonFont))
-                .foregroundColor(Assets.color(.foreground))
-                .padding(25)
-                .background(Assets.color(.backgroundExampleView))
-                .cornerRadius(15)
-                .padding(80)
-                .background(Assets.color(.backgroundMainView))
-            }
+struct ContentView: View {
+    var body: some View {
+        Button(action: {}) {
+            Assets.systemImage(.doneButton)
+            Text(Assets.string(.exampleText))
+                .font(Assets.font(.someLabelFont))
         }
+        .font(Assets.font(.someButtonFont))
+        .foregroundColor(Assets.color(.foreground))
+        .padding(25)
+        .background(Assets.color(.backgroundExampleView))
+        .cornerRadius(15)
+        .padding(80)
+        .background(Assets.color(.backgroundMainView))
+    }
+}
 ```
 
 - under UIKit:
 ```swift
-        import Assets
+import Assets
 
-        class ViewController: UIViewController {
+class ViewController: UIViewController {
 
-            @IBOutlet private var exampleView: UIView!
-            @IBOutlet private var exampleLabel: UILabel!
+    @IBOutlet private var exampleView: UIView!
+    @IBOutlet private var exampleLabel: UILabel!
 
-            override func viewDidLoad() {
+    override func viewDidLoad() {
 
-                super.viewDidLoad()
+        super.viewDidLoad()
 
-                self.view.backgroundColor = Assets.color(.backgroundMainView)
-                exampleView.backgroundColor = Assets.color(.backgroundExampleView)
-                exampleView.layer.cornerRadius = 20
-                exampleLabel.text = Assets.string(.exampleText)
+        self.view.backgroundColor = Assets.color(.backgroundMainView)
+        exampleView.backgroundColor = Assets.color(.backgroundExampleView)
+        exampleView.layer.cornerRadius = 20
+        exampleLabel.text = Assets.string(.exampleText)
 
-            }
+    }
 
-        }
+}
 ```
 
 ## Installation
