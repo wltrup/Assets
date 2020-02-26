@@ -67,6 +67,10 @@ class ViewController: UIViewController {
 }
 ```
 
+## Dependencies
+
+**Assets** depends on anoher library of mine, [**AssetCatalogAware**](https://github.com/wltrup/AssetCatalogAware.git).
+
 ## Installation
 
 At the moment, **Assets** can only be installed by cloning or downloading its GitHub repository. I'm waiting for the Swift Package Manager to support resources so I can turn it into a proper package, since I'm moving away from CocoaPods and Carthage.
