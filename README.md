@@ -13,6 +13,7 @@
 - *modularity*: your application assets are organised in a single module, separate from the rest of your application
 - *type safety*: assets are accessed via enumeration values (which *you* define), rather than string literals
 - *uniform API*: **Assets** manages Strings, SwiftUI Fonts, System Images, non-system Images, and Colors, using a uniform pattern, like so:
+
 ```swift
 Assets.color(.backgroundMainView)
 Assets.systemImage(.doneButton)
@@ -23,6 +24,7 @@ It achieves its goals by relying on another library of mine, [AssetCatalogAware]
 Example projects for both UIKit and SwiftUI are provided. Here are the relevant parts, illustrating how **Assets** is used in practice:
 
 - under SwiftUI:
+
 ```swift
 import Assets
 
@@ -45,6 +47,7 @@ struct ContentView: View {
 ```
 
 - under UIKit:
+
 ```swift
 import Assets
 
@@ -78,10 +81,6 @@ At the moment, **Assets** can only be installed by cloning or downloading its Gi
 ## Older iOS versions
 
 **Assets** is meant to be used with iOS 13 and above. If you need to support iOS versions below 13.0, you might want to look at [AssetsPre13](https://github.com/wltrup/AssetsPre13), instead.
-
-## Author
-
-Wagner Truppel, trupwl@gmail.com
 
 ## License
 
